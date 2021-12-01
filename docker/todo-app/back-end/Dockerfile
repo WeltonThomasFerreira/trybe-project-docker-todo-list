@@ -1,6 +1,7 @@
 FROM node:14-alpine
+WORKDIR /todo-app
 EXPOSE 3001
-ADD ./node_modules.tar.gz ./todo-app/back-end
-COPY . ./todo-app/back-end
-ENTRYPOINT ./bin/bash
-CMD npm start
+ADD ./node_modules.tar.gz ./back-end
+COPY . ./back-end
+ENTRYPOINT ["./bin/bash"]
+CMD ["npm", "start"]
