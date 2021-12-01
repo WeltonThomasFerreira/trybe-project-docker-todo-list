@@ -52,7 +52,7 @@ todo-app/
 │       │   ├── tasks.bkp.json
 │       │   └── tasks.json
 │       ├── models
-│       │   └── Tasks.js
+│       │   └── Tasks.js´
 │       └── utils
 │           └── fileHandler.js
 ├── front-end # responsável por ser uma interface amigável para nosso back-end
