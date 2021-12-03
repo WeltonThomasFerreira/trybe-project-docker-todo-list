@@ -1,6 +1,7 @@
 FROM node:14-alpine
 WORKDIR /todo-app
 EXPOSE 3000
-ADD . ./front-end
+ADD ./node_modules.tar.gz ./front-end
+COPY . ./front-end
 ENTRYPOINT ["./bin/bash"]
 CMD ["npm", "start"]
